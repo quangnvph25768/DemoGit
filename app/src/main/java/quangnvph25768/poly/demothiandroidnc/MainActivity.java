@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     WebView wvView;
@@ -19,5 +20,6 @@ public class MainActivity extends AppCompatActivity {
         String dLink = intent.getStringExtra("link");
         wvView.loadUrl(dLink);
         wvView.setWebViewClient(new WebViewClient());
+        Toast.makeText(this, "Man hịnh chao", Toast.LENGTH_SHORT).show();
     }
 }
